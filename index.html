@@ -4,25 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wizarding World</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+  <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="imagens/logo.png" alt="Logo Wizarding World"></a>
-    <img src="imagens/gryffindor_logo.png" alt="Logo Grifinória">
-    <img src="imagens/slytherin_logo.png" alt="Logo Sonserina">
-    <img src="imagens/hufflepuffle_logo.png" alt="Logo Lufa Lufa">
-    <img src="imagens/ravenclaw_logo.png" alt="Logo Corvinal">
+    <a href="index.html" class="link_logo_wizarding"> <!--Logo Principal-->
+      <img src="imagens/logo.png" class="img_logo_wizarding" alt="Logo Wizarding World">
+    </a>
+    <p class="posiçaologos"> <!--Logos Menores canto superior direito-->
+      <img src="imagens/gryffindor_logo.png" class="logospequenas" alt="Logo Grifinória">
+      <img src="imagens/slytherin_logo.png" class="logospequenas" alt="Logo Sonserina">
+      <img src="imagens/hufflepuffle_logo.png      " class="logospequenas" alt="Logo Lufa Lufa">
+      <img src="imagens/ravenclaw_logo.png" class="logospequenas" alt="Logo Corvinal">
+    </p>
+    <link rel="stylesheet" href="C:\Users\joaov\OneDrive\Área de Trabalho\CODERHOUSE\PROJETO FINAL\CSS\houses.css"> <!--link refênciando arquivo CSS-->
   </header>
-  <nav>
-    <a href="HTML/movies.html">Filmes</a>
-    <a href="HTML/characters.html">Personagens</a>
-    <a href="HTML/spells.html">Feitiços</a>
-    <a href="HTML/hogwartsHouses.html">Casas</a>
-    <a href="HTML/games.html">Jogos</a>
-    <a href="HTML/news.html">Notícias</a>
-    <a href="HTML/dictionary.html">Dicionário</a>
-    <a href="HTML/cardGame.html">Card Game</a>
+  <nav> <!--Conteiner Navegação Principal-->
+    <div class="espaçamento_navegaçao">
+      <a href="movies.html" class="espaçamento cor_do_texto navegaçao">
+        Filmes
+      </a>
+      <a href="characters.html" class="espaçamento cor_do_texto navegaçao">
+        Personagens
+      </a>
+      <a href="spells.html" class="espaçamento cor_do_texto navegaçao">
+        Feitiços
+      </a>
+      <a href="hogwartsHouses.html" class="espaçamento cor_do_texto navegaçao">
+        Casas
+      </a>
+      <a href="games.html" class="espaçamento cor_do_texto navegaçao">
+        Jogos
+      </a>
+      <a href="news.html" class="espaçamento cor_do_texto navegaçao">
+        Notícias
+      </a>
+      <a href="dictionary.html" class="espaçamento cor_do_texto navegaçao">
+        Dicionário
+      </a>
+      <a href="cardGame.html" class="espaçamento cor_do_texto navegaçao">
+        Card Game
+      </a>
+    </div>
   </nav>
+
   <main>
     <section id="movies">
       <img src="imagens/sorting_hat.png" alt="Chapéu Seletor">
@@ -32,104 +58,136 @@
       </div>
     </section>
     <section id="Characters">
-      <a href="HTML/characters.html">Personagens</a>
-      <div>
-        <ul>
+      <div class="container"> <!--Conteiner LINHAS COM TEXTO ENTRE AS LINHAS-->
+        <div class="linha-horizontal"></div>
+        <div class="texto-entre-linhas">Personagens</div>
+        <div class="linha-horizontal"></div>
+      </div>
+      
+      <div >
+        <ul id="listagemPersonagens">
           <li>
-            <img src="https://ik.imagekit.io/hpapi/harry.jpg" alt="Harry Potter">
-            <h3>Harry Potter</h3>
+            <div class="posicionamentoImagemPersonagem"><img src="https://ik.imagekit.io/hpapi/harry.jpg" class="imgPersonagem" alt="Harry Potter"></div>
+            <div class="posicionamentoNomePersonagem"><h3>Harry Potter</h3></div>
+            
           </li>
           <li>
-            <img src="https://ik.imagekit.io/hpapi/hermione.jpeg" alt="Hermione Granger">
-            <h3>Hermione Granger</h3>
+            <div class="posicionamentoImagemPersonagem"><img src="https://ik.imagekit.io/hpapi/hermione.jpeg" class="imgPersonagem"alt="Hermione Granger"></div>
+            <div class="posicionamentoNomePersonagem"><h3>Hermione Granger</h3></div>
           </li>
           <li>
-            <img src="https://ik.imagekit.io/hpapi/ron.jpg" alt="Ronnie Weasley">
-            <h3>Ronnie Weasley</h3>
+            <div class="posicionamentoImagemPersonagem"><img src="https://ik.imagekit.io/hpapi/ron.jpg" class="imgPersonagem"alt="Ronnie Weasley"></div>
+            <div class="posicionamentoNomePersonagem"><h3>Ronnie Weasley</h3></div>
           </li>
           <li>
-            <img src="https://ik.imagekit.io/hpapi/draco.jpg" alt="Draco Malfoy">
-            <h3>Draco Malfoy</h3>
+            <div class="posicionamentoImagemPersonagem"><img src="https://ik.imagekit.io/hpapi/draco.jpg" class="imgPersonagem" alt="Draco Malfoy"></div>
+            <div class="posicionamentoNomePersonagem"><h3>Draco Malfoy</h3></div>
           </li>
         </ul>
       </div>
     </section>
     <section id="spells">
-      <a href="HTML/spells.html">Feitiços</a>
-      <ul>
-        <li>Expelliarmus</li>
-        <li>Estupefaça</li>
-        <li>Expecto Patronum</li>
-        <li>Crucio</li>
-        <li>Avada Kedavra</li>
-        <li>Imperio</li>
-        <li>Accio</li>
-        <li>Lumos</li>
-        <li>Alohomora</li>
-        <li>Wingardium Leviosa</li>
-      </ul>
+      <div class="container"> <!--Conteiner LINHAS COM TEXTO ENTRE AS LINHAS-->
+        <div class="linha-horizontal"></div>
+        <div class="texto-entre-linhas">Feitiços</div>
+        <div class="linha-horizontal"></div>
+      </div>
+      <div class="listaFeiticos">
+        <div class="listaUm">
+          <ul>
+            <li>Expelliarmus</li>
+            <li>Estupefaça</li>
+            <li>Expecto Patronum</li>
+            <li>Crucio</li>
+            <li>Avada Kedavra</li>
+          </ul>
+        </div>
+        <div class="listaDois">
+          <ul>
+            <li>Imperio</li>
+            <li>Accio</li>
+            <li>Lumos</li>
+            <li>Alohomora</li>
+            <li>Wingardium Leviosa</li>
+          </ul>
+        </div>
+      </div>      
     </section>
     <section>
-      <a href="HTML/hogwartsHouses.html">Casas</a>
-      <div>
-        <a href="hogwartsHouses.html">
+      <div class="container"> <!--Conteiner LINHAS COM TEXTO ENTRE AS LINHAS-->
+        <div class="linha-horizontal"></div>
+        <div class="texto-entre-linhas">Casas</div>
+        <div class="linha-horizontal"></div>
+      </div>
+    
+      <div class="hogwartsHouses">
           <img src="imagens/slytherin_logo.png" alt="Logo Sonserina">
           <img src="imagens/gryffindor_logo.png" alt="Logo Grifinória">
           <img src="imagens/hufflepuffle_logo.png" alt="Logo Lufa Lufa">
           <img src="imagens/ravenclaw_logo.png" alt="Logo Corvinal">
-        </a>
       </div>
     </section>
     <section id="games">
-      <a href="games.html">Jogos</a>
-      <div>
+      <div class="container"> <!--Conteiner LINHAS COM TEXTO ENTRE AS LINHAS-->
+        <div class="linha-horizontal"></div>
+        <div class="texto-entre-linhas">Jogos</div>
+        <div class="linha-horizontal"></div>
+      </div>
+      <div class="secaoJogos">
         <img src="imagens/hogwarts_legacy.jpg" alt="Capa Hogwarts Legacy">
         <h1>Hogwarts Legacy</h1>
       </div>
-      <div>
+      <div class="secaoJogos">
         <img src="imagens/harry_potter_desperta_a_magia.jpg" alt="Capa Harry Potter: Desperta a Magia">
+        <h1>Harry Potter: Desperta a Magia</h1>
       </div>
     </section>
     <section id="news">
-      <a href="HTML/news.html">Notícias</a>
-      <div>
+      <div class="container"> <!--Conteiner LINHAS COM TEXTO ENTRE AS LINHAS-->
+        <div class="linha-horizontal"></div>
+        <div class="texto-entre-linhas">Notícias</div>
+        <div class="linha-horizontal"></div>
+      </div>
+      
+      <div class="secaoNoticias">
         <h1>“Harry Potter” ganhará série inspirada nos livros, anuncia Warner Bros. Discovery</h1>
+        <br>
         <h2> J.K. Rowling será a produtora executiva do projeto, que terá um elenco inteiramente novo</h2>
       </div>
-      <div>
+      <div class="secaoNoticias">
         <h1>Há 20 anos, a Câmara Secreta era aberta no filme de "Harry Potter", apresentando Dobby e as Horcrux</h1>
+        <br>
         <h2>Primeira aparição da espada de Godric Gryffindor também marca a trama do segundo filme da saga</h2>
       </div>
-      <div>
+      <div class="secaoNoticias">
         <h1>Harry Potter estampará moedas britânicas em homenagem aos 25 anos do primeiro livro</h1>
+        <br>
         <h2>Serão quatro peças mostrando o bruxinho, o trem Hogwarts Express, o professor Albus Dumbledore e a escola de Hogwarts</h2>
       </div>
     </section>
   </main>
-  <footer>
-    <div>
+  <footer class="text-font">
+    <div class="tx1">
       <h4>Joao Vitor</h4>
-      <h5>(62)9 9815-0302</h5>
+      <h5>(62)99815-0302</h5>
       <h6>joaovitorloiro10@gmail.com</h6>
     </div>
-    <div>
-      <h4>Pedro</h4>
-      <h5>(XX)XXXXXXXXX</h5>
-      <h6>xxxxx@xxxx.com</h6>
-    </div>
-    <div>
+    
+    <div class="tx3">
       <h4>Reinaldo</h4>
       <h5>(51)996087669</h5>
       <h6>reinaldoarthurdieckel@gmail.com</h6>
     </div>
-    <div>
+    <div class="tx4">
       <h4>Thiago</h4>
       <h5>(48)999493708</h5>
       <h6>thiagoglirio@hotmail.com</h6>
     </div>
-    <h6>Copyright</h6>
-    <img src="../imagens/logo.png" alt="Logo">
+  <div class="footer">
+    <img src="src=imagens/logo.png" alt="Logo">
     <h6>Wizarding World</h6>
-  </footer>
+    <h6>Copyright</h6>
+  </div>
+</footer>
 </body>
 </html>
