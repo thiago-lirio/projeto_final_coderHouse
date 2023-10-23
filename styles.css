@@ -40,39 +40,24 @@ body {
   padding: 0px 10px 0px 0px;
 }
 
-/*Barra de navegação principal*/
-.navegaçao {
-  background-color: #740001;
-  margin: 10px -8px 10px -8px;
-}
-
-/*Espaçamentos das barras de navegação*/
-.espaçamento_navegaçao {
+.nav {
   display: flex;
+  background-color: #740001;
+  list-style: none;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-around;
 }
 
-.cor_do_texto {
+li {
+  margin: 0px;
+  padding: 5px;
+}
+
+.link_nav {
+  padding: 6px;
   color: #ecc970;
-  text-decoration: none;
-}
-
-/*espaçamentos da faixa vermelha da barra de navegação*/
-.espaçamento {
-  width: 100%;
-  padding: 6px 0px 6px 95px;
-}
-
-/*início da mini navegação*/
-.posiçao_mini_navegaçao {
-  margin: 30px 0px 15px 47px;
-}
-
-.tamanho_mini_navegaçao {
-  font-size: 15px;
-}
-
-.texto_vermelho {
-  color: #740001;
   text-decoration: none;
 }
 
